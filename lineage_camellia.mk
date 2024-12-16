@@ -33,3 +33,18 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="camellia-user 13 TP1A.220624.014 V14.0.6.0.TKTMIXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/camellia/camellia:12/SP1A.210812.016/V14.0.6.0.TKTMIXM:user/release-keys
+
+# RisingOS Flags
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := false
+RISING_PACKAGE_TYPE := "VANILLA_AOSP"
+TARGET_PREBUILT_GOOGLE_CAMERA := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+# Inherit RisingOS configurations.
+RISING_MAINTAINER = Susanoo
+# Add Official Stuff
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Mediatek Dimensity 700" \
+    RisingMaintainer="Susanoo"
